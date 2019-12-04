@@ -1,0 +1,18 @@
+doctype html
+html
+ head
+   title #{title}
+   link(rel='stylesheet', href='/css/style.css')
+   meta(name="viewport" content="width=device-width, initial-scale=1")
+ body
+   header.header
+         h1 #{title}
+   div.canzone
+     div.canzone-image(style=`background: url('/images/${canzone.thumbnail}') top center no-repeat; background-size: cover;`)
+     div.canzone-details
+       p.canzone-name
+        | Titolo: <B style="color: red;"> #{canzone.title} </B>
+       p.canzone-name
+        | Autore: <B style="color: red;"> #{canzone.author} </B>
+       p.canzone-name
+        | Lirica: <B style="color: red;"> #{canzone.lyrics} </B>

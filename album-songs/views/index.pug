@@ -5,22 +5,14 @@ html
    link(rel='stylesheet', href='/css/style.css')
    meta(name="viewport" content="width=device-width, initial-scale=1")
  body
-   header
-    h1 #{title}
-   article
+   header.header
+         h1 #{title}
+   article.container
      each elemento in canzoni
        div.elemento
-        div.elemento-image(style=`background: url('/images/${elemento.thumbnail}') top center no-repeat; background-size: cover;`)
-        h2
-         | Titolo: #{elemento.title} 
-        a(href=`/songs?nome=${elemento.song-id}`)
-         | Visualizza
-        p
-         | Autore: <B style="color: red;"> #{elemento.author} </B>
-        p
-         | Lyrics: <B style="color: red;"> #{elemento.lyrics} </B>
-
-        
-        
+         h2.elemento-name
+          | Titolo: <B style="color: red;"> #{elemento.title} </B> 
+         a(href=`/song?song_id=${elemento.song_id}`)
+          | Visualizza
            
 
