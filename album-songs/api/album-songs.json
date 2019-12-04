@@ -1,0 +1,28 @@
+{
+ "songs": 
+ [
+   {
+     "song_id": "1",
+     "title": "canzone1",
+     "author": "Alessio",
+     "lyrics": "Mario",
+     "thumbnail": "canzone1.jpg"
+   },
+  
+   {
+     "song_id": "2",
+     "title": "canzone2",
+     "author": "Pippo",
+     "lyrics": "Giuseppe",
+     "thumbnail": "canzone2.jpg"
+   },
+
+   {
+     "song_id": "3",
+     "title": "canzone3",
+     "author": "Paperino",
+     "lyrics": "Luigi",
+     "thumbnail": "canzone3.jpg"
+   }
+ ]
+}
